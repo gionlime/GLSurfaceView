@@ -18,7 +18,8 @@ public class OpenGLRender implements GLSurfaceView.Renderer {
      */
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-
+        // 禁用OpenGL防抖动功能，提高性能
+        gl.glDisable(GL10.GL_DITHER);
         // 设置背景颜色
         gl.glClearColor(0f, 1f, 0f, 0.5f);
         // 使用光滑材质、默认不需要
