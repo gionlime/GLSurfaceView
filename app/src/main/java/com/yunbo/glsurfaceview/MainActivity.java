@@ -1,9 +1,9 @@
 package com.yunbo.glsurfaceview;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.yunbo.glsurfaceview.databinding.ActivityMainBinding;
 
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = binding.sampleText;
         tv.setText(stringFromJNI());
-
 
 
     }
